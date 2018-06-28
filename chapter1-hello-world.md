@@ -19,7 +19,7 @@ docker images repository :TAG
 repository 是镜像名
 
 运行容器
-docker run image[:TAG]
+docker run image :TAG
 image是镜像(必填)
 docker run hello-world
 
