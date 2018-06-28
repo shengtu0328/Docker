@@ -1,21 +1,27 @@
-# Docker11
-Docker入门
-
 Centos7 安装 docker
 yum install docker
 
+查看docker 版本
+docker version
 
 启动docker 服务
 service docker start
 
+拉取镜像
+docker pull name :TAG
+docker pull hello-world
+name是镜像名称(必填)
+TAG是版本(不必填，不填代表拉取的是最新版本) 
+默认是去官网下
 
-run的时候没有这个容器会去官方下这个镜像
- 
+查看本地所有镜像（IMAGE_ID唯一标识镜像）
+docker images repository :TAG  
+repository 是镜像名
 
-docker ps –a   目前所有的容器：
+运行容器
+docker run image[:TAG]
+image是镜像(必填)
+docker run hello-world
 
-docker ps      显示所有运行的容器：
-
-docker images  查看本地所有镜像（IMAGE_ID唯一标识镜像）
-docker build  -t jpress:latest ./test/       -t 是命名  jpress 是名字  latest 版本  ./test/
-docker run -d -p 8888:8080 jpress      -d标识后台运行 –p表示端口映射name  
+docker帮助命令
+docker run --help
