@@ -1,5 +1,5 @@
-###Docker运行nginx
-###nginx是一个持久运行的容器，有别于helloworld在后台运行
+Docker运行nginx
+nginx是一个持久运行的容器，有别于helloworld在后台运行
 
 从Docker中国官方镜像下载nginx镜像
 docker pull registry.docker-cn.com/library/nginx
