@@ -44,31 +44,3 @@ docker run -d -P registry.docker-cn.com/library/nginx
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
